@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organiza Festa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Organiza Festa</h1>
+        <p>Sistema de Planejamento de Eventos</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Criar Novo Evento</h2>
+            <form id="form-novo-evento">
+                <div class="input-group">
+                    <label>Nome do Evento:</label>
+                    <input type="text" id="nome" placeholder="Ex: Casamento da Claudia" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Data:</label>
+                    <input type="text" id="data" placeholder="DD/MM/AAAA" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Orçamento (R$):</label>
+                    <input type="number" id="orcamento" placeholder="0.00" step="0.01" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Tipo:</label>
+                    <input type="text" id="tipo" placeholder="Ex: Casamento, Aniversário...">
+                </div>
+
+                <div class="input-group">
+                    <label>Local:</label>
+                    <input type="text" id="local" placeholder="Onde será?">
+                </div>
+
+                <button type="submit">Salvar Evento</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Meus Eventos Cadastrados</h2>
+            <div id="lista-eventos">
+                <p>Carregando...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
